@@ -33,13 +33,11 @@ nav ul {
   margin-left: auto;  
 }
 
-
 .divider {
   width: 2px; 
   background: #ccc;   
   margin: 0 1rem;     
 }
-
 
 nav ul li a {
   display: block;
@@ -67,15 +65,9 @@ nav ul li a.active:hover {
     align-items: flex-start;
     justify-content: center;
     width: max-content;
-    margin: 0 auto;
+    margin: 1.5rem auto;
     padding: 5px 15px;
     text-align: center;
-  }
-
-  nav ul li a.active {
-    color: #ddd;
-    border-bottom: none;
-    text-decoration: underline;
   }
 
   .divider-top {
@@ -88,12 +80,6 @@ nav ul li a.active:hover {
     display: none;                 
   }
 
-  .nav-right {
-    display: flex;
-    margin-left: 0; 
-  }
-
-
   nav ul li {
     width: 100%;              
   }
@@ -102,6 +88,17 @@ nav ul li a.active:hover {
     width: 100%;
     padding: 5px 5px;     
     margin: 0 auto;       
+  }
+
+  nav ul li a.active {
+    color: #ddd;
+    border-bottom: none;
+    text-decoration: underline;
+  }
+
+  .nav-right {
+    display: flex;
+    margin-left: 0; 
   }
 
   .nav-right a {
