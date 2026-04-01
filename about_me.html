@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Me</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_me.html" class="active">About Me</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+        </ul>
+    </nav>
+<main>
+    <div class="section" style="margin-top: 1rem;">
+        <h2 class="section-header">Education</h2>
+        <div class="section-list">
+            <div class="section-item">
+                <div class="section-meta">
+                    <div class="section-title">Master's Degree</div>
+                    <div class="section-date">September 2022 - October 2025</div>
+                    <div class="section-institution">ETH Zurich</div>
+                    <div class="section-place">Zürich, Switzerland</div>
+                </div>
+                <div class="section-description">
+                    <p>
+                        During my Master's, I specialized in secure and reliable systems.
+                        Among many courses, I completed program verification and formal foundations of programming languages.
+                        I was awarded the ETH Medal for my Master's thesis "Dependency Analysis in Automated Verification Proofs".
+                        <br/>
+                        GPA: 5.7/6.0
+                    </p>
+                </div>
+            </div>
+            <div class="section-item">
+                <div class="section-meta">
+                    <div class="section-title">Bachelor's Degree</div>
+                    <div class="section-date">September 2018 - July 2022</div>
+                    <div class="section-institution">ETH Zurich</div>
+                    <div class="section-place">Zürich, Switzerland</div>
+                </div>
+                <div class="section-description">
+                    <p>
+                        In my Bachelor's degree, I acquired the foundations of computer science in a wide range of topics, such as
+                        (functional) programming, discrete mathematics, parallel computing, compiler design, formal methods and machine learning.
+                        <br/>
+                        GPA: 5.5/6.0
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="section-header">Experience</h2>
+        <div class="section-list">
+            <div class="section-item">
+                <div class="section-meta">
+                    <div class="section-title">Doctoral Student</div>
+                    <div class="section-date">November 2025 - current</div>
+                    <div class="section-institution">ETH Zurich</div>
+                    <div class="section-place">Zürich, Switzerland</div>
+                </div>
+                <div class="section-description">
+                    <p>
+                        I am researching in the area of program verification. 
+                        My main focus is on veryifing transpilations to Rust by proving the equivalence of programs and their transpilation.
+                    </p>
+                </div>
+            </div>
+            <div class="section-item">
+                <div class="section-meta">
+                    <div class="section-title">Software Engineer (Working Student)</div>
+                    <div class="section-date">May 2022 - February 2025</div>
+                    <div class="section-institution">BSI Software</div>
+                    <div class="section-place">Zürich, Switzerland</div>
+                </div>
+                <div class="section-description">
+                    <p>
+                        I co-designed a datamigration from an Oracle to a Postgres database.
+                        In the final phase of this 2.5-year project, I took responsibility for testing the correctness, stability, and performance of the migraton.
+                        The migration successfully ran over an extended weekend and finished well within the strict time frame without any incident.
+                        In this project, I collaborated with a dynamic project team and customers.
+                        <br/>
+                        After this project, I joined the Cloud engineering team for 6 months, where I have learned the basics of Kubernetes, Ansible, and Terraform. 
+                    </p>
+                </div>
+            </div>
+            <div class="section-item">
+                <div class="section-meta">
+                    <div class="section-title">Software Engineering Intern</div>
+                    <div class="section-date">September 2021 - February 2022</div>
+                    <div class="section-institution">BSI Software</div>
+                    <div class="section-place">Baden, Switzerland</div>
+                </div>
+                <div class="section-description">
+                    <p>
+                        During my 6 months internship, I maintained and implemented new features in a CRM web application.  
+                        I gained valuabe insights into project management, collaboration, and the practical sides of computer science in general.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="section-header">Awards</h2>
+        <div class="section-list">
+            <div class="section-item">
+                <div class="section-meta">
+                    <div class="section-title">ETH Medal</div>
+                    <div class="section-date">February 2026</div>
+                    <div class="section-institution">ETH Zurich</div>
+                </div>
+                <div class="section-description">
+                    <p>
+                    I was awarded the ETH Medal for my Master's thesis "Dependency Analysis in Automated Verification Proofs".
+                    This award is given to the best 2.5% of the Master's theses.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>Last Updated: {{ last_updated }}</footer>
+</body>
+</html>

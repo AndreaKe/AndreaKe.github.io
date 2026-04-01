@@ -1,0 +1,119 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+p {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.section {
+    max-width: 80vw;   
+    width: 100%;       
+    margin: 3rem;
+}
+
+.section-header {
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.2rem;
+}
+
+nav ul li a.active {
+  color: #ddd;
+  border-bottom: 4px solid #ddd;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 10px;
+  margin-top: 2rem;
+  padding: 0;
+  background-color: #6f6f6f;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+    text-align: center;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #111111;
+}
+
+nav ul li a.active:hover {
+  background-color: #6f6f6f;
+}
+
+.section-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.section-item {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+  border-left: 2px solid #ddd;
+  grid-template-columns: 150px 1fr;
+  padding-left: 1rem;
+}
+
+.section-meta {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.section-title {
+  font-weight: bold;
+  color: #000;
+}
+
+.section-date {
+  margin-top: 0.25rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.section-institution {
+  margin-top: 0.25rem;
+}
+
+.section-description {
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .section-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+}
+
+footer {
+  margin-top: 4rem;
+  padding: 1.5rem 0 0;
+
+  border-top: 1px solid #eee;
+
+  text-align: center;
+  font-size: 0.8rem;
+  color: #777;
+  letter-spacing: 0.02em;
+}

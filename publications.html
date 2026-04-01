@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Publications</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_me.html">About Me</a></li>
+            <li><a href="publications.html" class="active">Publications</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+        </ul>
+    </nav>
+<main>
+    <!-- <div class="section">
+        <h2 class="section-header">Conference Papers</h2>
+    </div> -->
+    <!-- <div class="section">
+        <h2 class="section-header">Talks</h2>
+    </div> -->
+    <div class="section" style="margin-top: 1rem;">
+        <h2 class="section-header">Theses</h2>
+        <div class="section-list">
+            <div class="section-item">
+                <div class="section-meta">
+                    <div class="section-title">Master's Thesis</div>
+                    <div class="section-date">February 2025 - October 2026</div>
+                    <div class="section-institution">ETH Zurich</div>
+                </div>
+                <div class="section-description">
+                    <p><b>Dependency Analysis in Automated Verification Proofs</b><br/>
+                        Supervised by João Pereira, Lea Salome Brugger, Prof. Dr. Peter Müller <br/><br/>
+                    I designed an algorithm to automatically analyze all dependencies between assumptions, facts, and proof obligations in a verification proof.
+                    The result of the analysis is a dependency graph that encodes all direct and indirect dependencies within and across program components. 
+                    Furthermore, I introduced a proof coverage metric indicating which fraction of the code is indeed required for proving the specification of the program.
+                    This metric can be used to estimate the strength of a specification.
+                    <br/>
+                    The thesis can be downloaded <a href="resources/Andrea_Keusch_Dependency_Analysis_Thesis.pdf" download>here</a>.
+                    <br/>
+                    I was honored with the ETH Medal for this work.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+    
+<footer>Last Updated: {{ last_updated }}</footer>
+</body>
+</html>
