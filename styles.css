@@ -6,9 +6,7 @@ body {
   font-family: 'Inter', Arial, sans-serif;
   font-size: 16px;   
   line-height: 1.6;
-}
-
-main {
+  max-width: 100ch;
   flex: 1;
   max-width: 100ch;
   margin: 0 auto;
@@ -102,12 +100,6 @@ nav ul li a.active:hover {
 }
 
 /* Sections */
-
-.section {
-    max-width: 80vw;   
-    width: 100%;       
-    margin: 3rem;
-}
 
 .section-header {
   text-align: center;
