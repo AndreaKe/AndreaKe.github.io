@@ -61,6 +61,10 @@ nav ul li a.active:hover {
 }
 
 @media (max-width: 650px) {
+  nav {
+    margin-top: 1rem;
+  }
+
   nav ul {
     flex-direction: column;     
     align-items: flex-start;
