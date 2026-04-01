@@ -15,22 +15,7 @@ main {
   padding: 0 1rem;
 }
 
-p {
-    padding-top: 0;
-    margin-top: 0;
-}
-
-.section {
-    max-width: 80vw;   
-    width: 100%;       
-    margin: 3rem;
-}
-
-.section-header {
-  text-align: center;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 0.2rem;
-}
+/* Navigation bar */
 
 nav ul li a.active {
   color: #ddd;
@@ -47,9 +32,18 @@ nav ul {
   justify-content: center;
 }
 
-header {
-    text-align: center;
+.nav-right {
+  display: flex;
+  margin-left: auto;  
 }
+
+
+.divider {
+  width: 2px; 
+  background: #ccc;   
+  margin: 0 1rem;     
+}
+
 
 nav ul li a {
   display: block;
@@ -65,6 +59,63 @@ nav ul li a:hover {
 nav ul li a.active:hover {
   background-color: #6f6f6f;
 }
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;     
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  nav ul li a.active {
+    color: #ddd;
+    border-left: 4px solid #ddd;
+    border-bottom: none;
+    text-decoration: underline;
+  }
+
+  .nav-right {
+    display: flex;
+    margin-left: 0; 
+  }
+
+
+  nav ul li {
+    width: 100%;              
+  }
+
+  nav ul li a {
+    width: 100%;
+    padding-left: 5px;            
+  }
+
+
+  .divider {
+    display: none;  
+  }
+
+  .nav-right a {
+    text-align: center;
+    padding: 0px 0px;
+    margin: 0px 15px;
+  }
+}
+
+/* Sections */
+
+.section {
+    max-width: 80vw;   
+    width: 100%;       
+    margin: 3rem;
+}
+
+.section-header {
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.2rem;
+}
+
+/* CV-like lists */
 
 .section-list {
   display: flex;
@@ -109,6 +160,16 @@ nav ul li a.active:hover {
     gap: 0.5rem;
   }
 
+}
+
+
+p {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+header {
+    text-align: center;
 }
 
 footer {
