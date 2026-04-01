@@ -49,6 +49,6 @@
     </div>
 </main>
     
-<footer>Last Updated: {{ last_updated }}</footer>
+<footer>Last Updated: {{ page.last_modified_at | date: "%B %d, %Y" }}</footer>
 </body>
 </html>

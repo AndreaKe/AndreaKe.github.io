@@ -103,7 +103,7 @@ nav ul li a.active:hover {
   line-height: 1.5;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .section-item {
     grid-template-columns: 1fr;
     gap: 0.5rem;
