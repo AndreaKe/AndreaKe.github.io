@@ -164,6 +164,10 @@ header {
     text-align: center;
 }
 
+main {
+  flex: 1;
+}
+
 footer {
   margin-top: 2rem;
   padding: 1rem 0 0.5rem;
