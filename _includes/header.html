@@ -1,1 +1,20 @@
-<header><h1 style="margin-bottom: 0;padding-bottom: 0;">Andrea Keusch</h1><p>andrea dot keusch at inf.ethz.ch</p></header>
+<header class="site-header">
+    <div class="site-id">
+        <a class="site-name" href="index.html">Andrea Keusch</a>
+        <span class="site-email">andrea dot keusch at inf.ethz.ch</span>
+    </div>
+    <nav class="site-nav" aria-label="Main">
+        <ul class="nav-links">
+            <li><a href="index.html"{% if page.url == "/" or page.url == "/index.html" %} class="active" aria-current="page"{% endif %}>Home</a></li>
+            <li><a href="about_me.html"{% if page.url == "/about_me.html" %} class="active" aria-current="page"{% endif %}>About Me</a></li>
+            <li><a href="publications.html"{% if page.url == "/publications.html" %} class="active" aria-current="page"{% endif %}>Publications</a></li>
+            <li><a href="teaching.html"{% if page.url == "/teaching.html" %} class="active" aria-current="page"{% endif %}>Teaching</a></li>
+        </ul>
+        <ul class="nav-icons">
+            <li><a href="https://github.com/AndreaKe" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/andrea-keusch/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+            <!-- TODO: replace 0000-0000-0000-0000 with your ORCID iD -->
+            <li><a href="https://orcid.org/0000-0000-0000-0000" aria-label="ORCID"><i class="fa-brands fa-orcid" aria-hidden="true"></i></a></li>
+        </ul>
+    </nav>
+</header>

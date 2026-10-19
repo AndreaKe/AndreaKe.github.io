@@ -1,58 +1,26 @@
 ---
 title: Home
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>Andrea Keusch</title>
-</head> 
-<body>
-    <nav>
-        <ul> 
-            <li><a href="index.html" class="active">Home</a></li>  
-            <li><a href="about_me.html">About Me</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-            {% include nav-right.html %}
-        </ul>
-    </nav>
-    {% include header.html %}
-<main>
-    <div class="section" style="margin-top: 0.5rem;">
-        <div class="section-list">
-            <div class="section-item">
-                <div class="section-meta">
-                    <img src="resources/profile-picture.jpg" alt="Andrea Keusch" style="width:30ch;">
-                </div>
-                <div class="section-description">
-                    <p>
-                        I'm a doctoral student in the <a href="https://www.pm.inf.ethz.ch/">Programming Methodology Group</a> at ETH Zurich
-                        under the supervision of <a href="https://www.pm.inf.ethz.ch/people/personal/pmueller-pers.html">Prof. Dr. Peter Müller</a>. 
-                        My research focuses on program verification, in particular on program equivalence proofs.
-                        More broadly, I'm interested in developing correct and well-designed software.
-                        Previously, I have obtained my Master's degree in computer science from ETH in October 2025.
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-        
+<div class="intro">
+    <img class="intro-photo" src="resources/profile-picture.jpg" alt="Andrea Keusch">
+    <div>
+        <p>
+            I'm a doctoral student in the <a href="https://www.pm.inf.ethz.ch/">Programming Methodology Group</a> at ETH Zurich
+            under the supervision of <a href="https://www.pm.inf.ethz.ch/people/personal/pmueller-pers.html">Prof. Dr. Peter Müller</a>.
+            My research focuses on program verification, in particular on program equivalence proofs.
+            More broadly, I'm interested in developing correct and well-designed software.
+            Previously, I have obtained my Master's degree in computer science from ETH in October 2025.
+        </p>
     </div>
-    <!-- <div class="section">
-        <h2 class="section-header">Research Interests</h2>
-    </div> -->
-    <div class="section">
-        <h2 class="section-header">News</h2>
-        <ul>
-            <li><b>February 2026:</b> I received the ETH Medal for my Master's thesis!</li>
-            <li><b>November 2025:</b> I have started my PhD at ETH Zurich.</li>
-        </ul>
-    </div>
-</main>
- {% include footer.html %}
-</body>
-</html>
+</div>
+<!-- <div class="section">
+    <h2 class="section-header">Research Interests</h2>
+</div> -->
+<div class="section">
+    <h2 class="section-header">News</h2>
+    <ul class="dated-list">
+        <li><span class="date">Feb 2026</span><span>I received the ETH Medal for my Master's thesis!</span></li>
+        <li><span class="date">Nov 2025</span><span>I have started my PhD at ETH Zurich.</span></li>
+    </ul>
+</div>
